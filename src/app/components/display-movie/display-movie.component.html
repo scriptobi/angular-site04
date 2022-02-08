@@ -1,0 +1,9 @@
+<div class="container">
+    <div *ngFor="let item of this.listFilm">
+        <div>
+            <h1>{{ item.original_title }}</h1>
+            <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/{{item.poster_path}}" alt="Affiche du film {{item.title}}">
+            <p>{{ item.overview }}</p>
+        </div>
+    </div>
+</div>
